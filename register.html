@@ -121,9 +121,12 @@
             font-size: 17px;
             box-sizing: border-box;
             transition: all 0.3s;
-        }
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+         }
 
-        .form-group input:focus {
+        .form-group select:focus {
             outline: none;
             border: 1px solid #00ff40;
             background-color: #002b0f;
@@ -299,6 +302,28 @@
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" placeholder="Create a strong password" required>
+            </div>
+
+            <div class="form group">
+                <label for="country">Country</label>
+                <select id="country" name="country" class="form-input">
+    <option value="" disabled selected>Select Country</option>
+    <option value="Nigeria">Nigeria</option>
+    <option value="Ghana">Ghana</option>
+    <option value="South Africa">South Africa</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Uganda">Uganda</option>
+    <option value="Cameroon">Cameroon</option>
+    <option value="Ivory Coast">Ivory Coast</option>
+    <option value="Senegal">Senegal</option>
+    <option value="Tanzania">Tanzania</option>
+    <option value="Rwanda">Rwanda</option>
+    <option value="Zambia">Zambia</option>
+    <option value="Zimbabwe">Zimbabwe</option>
+    <option value="Benin">Benin</option>
+    <option value="Togo">Togo</option>
+    <option value="Egypt">Egypt</option>
+</select>
             </div>
 
             <button type="submit" class="action-button">SAVE & PROCEED TO PAYMENT</button>
