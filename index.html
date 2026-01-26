@@ -180,6 +180,19 @@
             margin: 0;
             line-height: 1;
         }
+        .how-it-works-title {
+            position: relative;
+            text-align: center;
+        }
+
+.how-it-works-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--primary-green);
+    margin: 10px auto 0;
+}
 
         /* GRID */
         .works-grid {
