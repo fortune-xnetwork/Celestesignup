@@ -329,23 +329,23 @@
 
             <div class="form-group">
     <label for="country">Country</label>
-    <select id="country" name="country">
+    <select id="country" name="country" required>
         <option value="" disabled selected hidden>Select Country</option>
-        <option>Nigeria</option>
-        <option>Ghana</option>
-        <option>South Africa</option>
-        <option>Kenya</option>
-        <option>Uganda</option>
-        <option>Cameroon</option>
-        <option>Ivory Coast</option>
-        <option>Senegal</option>
-        <option>Tanzania</option>
-        <option>Rwanda</option>
-        <option>Zambia</option>
-        <option>Zimbabwe</option>
-        <option>Benin</option>
-        <option>Togo</option>
-        <option>Egypt</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Ghana">Ghana</option>
+        <option value="South Africa">South Africa</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Ivory Coast">Ivory Coast</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+        <option value="Benin">Benin</option>
+        <option value="Togo">Togo</option>
+        <option value="Egypt">Egypt</option>
     </select>
             </div>
 
@@ -378,6 +378,10 @@
             <div class="summary-item">
                 <span style="color:#aaa">Phone:</span>
                 <span id="summary-phone" style="font-weight:700">Phone</span>
+            </div>
+            <div class="summary-item">
+                <span style="color:#aaa">Country</span>
+                <span id="summary-country" style="font-weight:700">Country</span>
             </div>
             <div class="summary-item">
                 <span style="color:#aaa">Plan:</span>
@@ -491,6 +495,7 @@ document.addEventListener('DOMContentLoaded', () => {
             username: document.getElementById('username').value,
             email: document.getElementById('email').value,
             phone: document.getElementById('phone-number').value,
+            country: document.getElementById('country').value,
             plan: displayPlan
         };
 
@@ -498,6 +503,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('summary-user').textContent = "@" + userData.username;
         document.getElementById('summary-email').textContent = userData.email;
         document.getElementById('summary-phone').textContent = userData.phone;
+        document.getElementById('summary-country').textContent = userData.country;
         document.getElementById('summary-plan').textContent = userData.plan;
         document.getElementById('summary-total').textContent = "₦" + amountToPay.toLocaleString();
 
