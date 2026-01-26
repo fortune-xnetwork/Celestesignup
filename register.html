@@ -257,8 +257,8 @@ document.addEventListener('DOMContentLoaded', () => {
         displayPlan = "Euro-Max ₦14,500";
         amountToPay = 14500;
     } else {
-        displayPlan = "Euro-Elite ₦8,500";
-        amountToPay = 8500;
+        displayPlan = "Euro-Elite ₦500";
+        amountToPay = 500;
     }
     document.getElementById('selected-plan-display').textContent = displayPlan;
 
@@ -307,7 +307,7 @@ function payWithFlutterwave() {
             name: userData.fullName,
         },
         customizations: {
-            title: "Celeste Digital Network",
+            title: "PANDA MEDIA (Flutterwave merchant 105)",
             description: "Activation for Celeste Ecosystem",
             logo: "logo.png",
         },
@@ -321,7 +321,8 @@ function payWithFlutterwave() {
                             `🧾 *Ref:* ${data.transaction_id}%0A%0A` +
                             `✅ *Status:* PAID VIA FLUTTERWAVE`;
             
-            window.location.href = `https://t.me/CoachMiracle1?text=${message}`;
+            window.location.href = `https://t.me/coachfavour01?text=Hello+Coach,+I+just+made+my+payment+for+a+Celeste+plan,+
+            Here+is+my+receipt,+Please+Confirm!`;
         },
         onclose: function() {
             // Logic when user closes the modal
