@@ -122,6 +122,20 @@
             box-sizing: border-box;
             transition: all 0.3s;
          }
+        
+        .form-group input,
+        .form-group select {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid rgba(0, 255, 64, 0.1);
+    border-radius: 15px;
+    background-color: #001a08;
+    color: white;
+    font-size: 17px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    appearance: none;
+        }
 
         .form-group input:focus {
             outline: none;
@@ -303,7 +317,7 @@
 
             <div class="form group">
                 <label for="country">Country</label>
-                <select id="country" name="country" class="form-input">
+                <select id="country" name="country" class="form-group select">
     <option value="" disabled selected>Select Country</option>
     <option value="Nigeria">Nigeria</option>
     <option value="Ghana">Ghana</option>
