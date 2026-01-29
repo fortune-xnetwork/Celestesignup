@@ -46,6 +46,13 @@ display:block;
         .navbar a.active { border-bottom: 3px solid #00ff40; }
         .register-container { width: 95%; max-width: 480px; margin: 30px auto 100px auto; background: rgba(255, 255, 255, 0.03); border: 1.3px solid rgba(0, 255, 64, 0.2); backdrop-filter: blur(15px); border-radius: 24px; padding: 35px 25px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6); position: relative; z-index: 10; }
         .main-title { font-size: 24px; font-weight: 900; color: white; text-align: center; margin-bottom: 15px; text-transform: uppercase; font-family: "Times New Roman", Times, serif; }
+        .site-subtitle{
+    font-size:16px;
+    color:rgba(255,255,255,0.55);
+    margin-top:13px;     /* space from title */
+    margin-bottom:1px;
+    text-transform:none;
+        }
         .plan-selection-text { font-size: 17px; color: white; text-align: center; line-height: 1.5; margin-bottom: 30px; font-weight: 500; }
         .plan-name { font-size: 23px; font-weight: 900; color: #00ff40; display: block; margin-top: 5px; text-transform: uppercase; font-family: "Times New Roman", Times, serif; }
         .form-group { margin-bottom: 25px; }
@@ -201,7 +208,8 @@ align-items: center;
     <div id="registration-view">
         <div class="main-title">Create Your Account</div>
         <div class="plan-selection-text">You have selected: <span id="selected-plan-display" class="plan-name">Checking...</span></div>
-        
+        <div class="site-subtitle">Kindly fill in your details below to continue:</div>
+    </div>
         <form id="registration-form">
             <div class="form-group">
                 <label for="full-name">Full Name</label>
