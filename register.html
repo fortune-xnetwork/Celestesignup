@@ -340,10 +340,10 @@ setTimeout(showNextActivity, 3000);
 
     const storedPlan = (localStorage.getItem('selectedPlan') || "").toLowerCase();
     if (storedPlan.includes("max") || storedPlan.includes("14500")) {
-        displayPlan = "Euro — Max ₦14,500";
+        displayPlan = "Euro — Max  (₦14,500)";
         amountToPay = 14500;
     } else {
-        displayPlan = "Euro — Lite ₦8,500";
+        displayPlan = "Euro — Lite  (₦8,500)";
         amountToPay = 8,500;
     }
     document.getElementById('selected-plan-display').textContent = displayPlan;
